@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+}
+.banner-wrap {
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+    width: 100vw;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 24px 16px 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 32px;
+}
+.nav-item {
+    justify-content: space-around;
+    margin-inline: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-item:hover{
+    background-color: #d8d9da;
+    border-top-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+.left-menu {
+    justify-content: space-around;
+}
+
+.logo {
+    height: 24px;
+    width: 120px;
+}
+
+main {
+    text-align: center;
+    height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    height: 10vh;
+    width: 100vw;
+}
+.title-section {
+    margin-top: calc(155px - 56px);
+}
+
+.actions-area {
+    margin-bottom: 100px;
+}
+
+button {
+    border: none;
+    background: none;
+    background-color: #d8d9da;
+    cursor: pointer;
+    height: 26px;
+    width: 210px;
+    padding: 4px 24px;
+    border-top-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.btn-dark {
+    background-color: #191d2172;
+    color: white;
+}
+.btn-dark:hover {
+    background-color:#414242 ;
+}
+
+.btn-light {
+    background-color: #e4e4e286;
+    color: black;
+}
+.btn-light:hover {
+    background-color: rgb(230, 230, 230) !important;;
+}

@@ -1,0 +1,9 @@
+#presentation {
+    padding: 100px 10px;
+  }
+  
+  @media all and (max-width: 500px) {
+    #presentation {
+      padding: 30px 10px;
+    }
+  }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Site de Tesla</title>
+</head>
+<body>
+    <!-- ENTETE -->
+<header>
+  
+    <nav class="navbar bg-dark navbar-dark p-3">
+      <div class="container">
+        <img src="Images/Logo-Tesla.png" style="height: 30px" class="mx-auto d-block"/>
+      </div>
+    </nav>
+    
+  </header>
+  
+  <!-- ICI : bannière -->
+  <div class="text-white py-5" style="background: center/cover url('Images/Voiture-Tesla.png')">
+    <div id="presentation" class="container">
+      <h1 class="display-4">Bienvenue.</h1>
+      <p>Le site Tesla vous permet de commander vos fusées et vos voitures, même lorsque vous êtes dans votre  canapé.
+        <span class="badge bg-success">Un conseillé est en ligne.</span></p>
+    </div>
+  </div>
+  
+  <!-- PREMIERE SECTION -->
+  <section>
+    
+    <div class="container mt-5">
+      
+      <!-- ICI : progress bar-->
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 43%"></div>
+      </div>
+      
+      <!-- ICI : alerte -->
+      <div class="alert alert-primary">
+      Bienvenue sur Tesla. Ce site est en maintenance.
+      <hr>
+        <!-- ICI : les deux boutons -->
+        <div class="btn-group btn-block">
+          <a class="btn btn-danger" href="#">Suivre les avancements</a>
+          <a class="btn btn-success" href="#">Nous contacter</a>
+        </div>
+      </div>
+      
+      <nav class="bg-light">
+       <!-- ICI : fil d'ariane -->
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Accueil</a>
+          </li>
+          <li class="breadcrumb-item">
+            Maintenance
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+    
+  </section>
+  
+  <!-- DEUXIEME SECTION -->
+  <section>
+    
+    <div class="container">
+      
+      <!-- ICI : les cartes --> 
+      <div class="row gy-4 mb-3">
+        <div class="col-md-6 order-md-1 order-2">
+          <div class="card bg-secondary text-white">
+            <img src="Images/pho-21.png" alt="..." class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Nouveautés</h5>
+              <p class="card-text">Vous pourrez bientôt acheter des fusées pour aller sur la lune.</p>
+            </div>
+          </div>
+       </div>
+
+       <div class="col-md-6 order-md-2 order-1">
+        <div class="card bg-secondary text-white">
+          <img src="Images/pho-21.png" alt="..." class="card-img-top">
+          <div class="card-header">Information</div>
+          <div class="card-body">
+            <h5 class="card-title">Nouveautés</h5>
+            <p class="card-text">Les 30 premiers acheteurs de fusées partiront avec Elon Musk.</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    
+  </section>
+  
+  <!-- TROISIEME SECTION -->
+  <section class="bg-dark text-white p-5">
+    <div class="mx-auto w-75">
+      <h2>Contactez-nous</h2>
+      
+      <form>
+        <p>
+          <label for="email">Adresse email</label>
+          <input type="email" class="form-control" placeholder="Entrez votre adresse email" name="email" id="email">
+          <small class="text-muted">Nous ne partagerons pas votre adresse email.</small>
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="form-control" rows="3"></textarea>
+        </p>
+        <button type="submit" class="btn btn-outline-light mt-3">Soumettre</button>
+      </form>
+      
+    </div>
+  </section>
+  
+  <!-- ICI : pied de page -->
+  <footer class="bg-secondary p-3">
+    <div class="container">
+      © Tesla
+    </div>
+  </footer>
+</body>
+</html>
