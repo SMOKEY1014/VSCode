@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: #222;
+    z-index: 100000;
+}
+
+.nav h2{
+    color: #fff;
+    font-size: 1.7rem;
+
+}
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#item li a:hover, #item .icons i:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+#item .icons i{
+    color:#fff;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+#bar{
+    color: #ff5733;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.back{
+    background-image: url(back2Pic.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.back .overlay{
+    background: #2a2b2c;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mid .btn{
+    margin-top: 2rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.simple{
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+}
+
+.mid .btn a.simple:hover{
+    color: #ff5733;
+}
+.mid .btn a.border{
+    color: #ff5733;
+    border:1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border-radius: 3px;
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border:1px solid #fff;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background: #171819;
+}
+
+.details h3,h6,h5{
+    color:#fff;
+}
+
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.1rem;
+}
+
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+.details .one a{
+    color: #fff;
+    background: #f13a11;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details .one a:hover{
+    background: #fff;
+    color: #f13a11;
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.5rem;
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+}
+
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+.trainer{
+    background: #f9f9f9;
+    padding: 8rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .about{
+    width: 39%;
+
+}
+
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.trainer .people{
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+                30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+                100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainer .people .team1 .name, .trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .people .team1 .name{
+    padding: 5px 20px 0 20px;
+}
+
+.trainer .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.trainer .people .team1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+}
+.trainer .people .team1 .name i, .trainer .people .team1 .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+.trainer .people .team1 .pro{
+    padding: 0 20px 5px 20px;
+}
+
+.trainer .people .team1 .pro p{
+    color: #212529;
+}
+
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.class .h2{
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.class .classMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.class .classMenu .team1{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    background: #d3d3d3;
+    box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+                30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+                100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+
+.class .classMenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.class .classMenu .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.class .classMenu .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 30px 10px;
+}
+
+
+.class .classMenu .team1 .teamDetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p{
+    color: #212529;
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p span{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .num h5 {
+    font-size: 1rem;
+    background: #f13a11;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.class .classMenu .team1 .teamDetails .pro {
+    padding: 10px 20px 30px 10px;
+}
+
+.class .classMenu .team1 .teamDetails .pro p {
+    font-size: 1.1rem;
+    color: #666262;
+}
+
+.contact{
+    padding: 8rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 45%;
+}    
+
+.contact .form h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+}
+
+.contact .map{
+    width: 45%;
+}
+
+.contact .map h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .map p{
+    font-size: 1.1rem;
+    color: #212529;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.contact .map p i{
+    color: red;
+    padding-right: 4px;
+}
+
+.contact .map iframe{
+    width: 100%;
+}
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+.footer p i{
+    color: red;
+    padding-right: 5px;
+}
+
+/*---media query---*/
+
+@media screen and (max-width: 1042px){
+    .nav{
+        
+        padding: 1rem 4.5rem;
+        
+    }
+    
+    .nav h2{
+    
+        font-size: 1.4rem;
+    
+    }
+   
+    #item li{
+    
+        padding-right: 30px;
+    }
+    #item li a{
+        
+        font-size: 0.9rem;
+    }
+    
+    
+    #item .icons i{
+        padding-right: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 991px){
+    .nav{
+        
+        padding: 1rem 3rem;
+    
+    }
+    
+    .nav h2{
+        
+        font-size: 1.6rem;
+    
+    }
+    #item{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -20px;
+        background: rgba(0,0,0,0.8);
+        z-index: 100000;
+        margin-top: 4.2rem;
+        transition: 1s;
+        
+    }
+    
+    
+    #item li{
+        padding-right: 0;
+        padding: 4px 0;
+    }
+    #item li a{
+        font-size: 1.2rem;
+    }
+
+    #item .icon{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #item .icons i{
+        padding: 0 15px 0 15px;
+    }
+    
+    #bar{
+        display: initial;
+        cursor: pointer;
+    }
+
+    .mid p{
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .mid h2{
+        font-size: 2.5rem;
+    }
+    
+    .mid .btn{
+        margin-top: 1.5rem;
+    }
+    
+    .mid .btn a{
+        font-size: 0.9rem;
+    }
+    
+    .mid .btn a.simple{
+        padding: 0.7rem 1.4rem;
+    }
+    
+
+    .mid .btn a.border{
+        padding: 0.7rem 1.4rem;
+    }
+
+    .details{
+        padding: 6rem 7rem;
+    }
+    
+    
+    .details .one{
+        width: 50%;
+    }
+    
+    .details .one h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    .details .one p{
+        font-size: 1.1rem;
+        margin-bottom: 2.2rem;
+    }
+    
+    .details .one a{
+        font-size: 0.9rem;
+    }
+    
+    .details .two{
+        padding-left: 3.5rem;
+    }
+    
+    .details .two h3{
+        font-size: 2rem;
+    }
+    
+    .details .two h5{
+        font-size: 1rem;
+    }
+    
+    .details .two p{
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .trainer{
+        padding: 6rem 7rem;
+    }
+    
+    .trainer .about h2{
+        font-size: 2rem;
+        padding-bottom: 1.4rem;
+    }
+    
+    .trainer .about p{
+        font-size: 1rem;
+    }
+    
+    .trainer .people .team1{
+        width: 45%;
+    }
+    
+    .trainer .people .team1 .name{
+        padding: 5px 15px 0 15px;
+    }
+    
+    .trainer .people .team1 .name h4{
+        font-size: 1.1rem;
+    }
+    .trainer .people .team1 .name i, .trainer .people .team1 .pro i{
+        font-size: 1.1rem;
+    }
+    
+    .trainer .people .team1 .pro{
+        padding: 0 15px 5px 15px;
+    }
+
+    .class{
+        padding: 6rem;
+    }
+    
+    .class .paragraph{
+        font-size: 1.1rem;
+        padding-bottom: 4px;
+    }
+    
+    .class .h2{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+    
+    
+    
+    .class .classMenu .team1 .teamDetails{
+        padding-bottom: 7px;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name{
+        padding: 10px 5px 15px 5px;
+    }
+    
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{
+        font-size: 1.2rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{
+        font-size: 1rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails p span{
+        font-size: 1rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .num h5 {
+        font-size: 0.9rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height: 3.2rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .pro {
+        padding: 10px 10px 30px 5px;
+    }
+    
+    .class .classMenu .team1 .teamDetails .pro p {
+        font-size: 1rem;
+    }
+
+    .contact{
+        padding: 6rem;
+    }
+    
+    .contact .form h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    
+    .contact .form .submit input, .contact .form .submit textarea{
+        padding: 12px;
+        margin: 10px 0;
+    }    
+    
+    .contact .form .submit input::placeholder{
+        font-size: 1rem;
+    }
+    
+    .contact .form .submit textarea::placeholder{
+        font-size: 1rem;
+    }
+    
+    .contact .form .submit a{
+        padding: 13px 0;
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    .contact, .footer {
+        flex-direction: row;
+        align-items: center;
+    }
+    .contact {
+        padding-left: 20px;
+    }
+    
+    .contact .map h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    
+    .contact .map p{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .footer{
+        padding: 6rem;
+    }
+    
+    
+    
+
+}
+
+@media screen and (max-width: 768px){
+    .nav {
+        width: 100vw;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    #item {
+        display : none;
+    }
+    .btn, .details, .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .details {
+        padding: 20px;
+    }
+    .details p, h6, h3 {
+        width: 250px;
+    }
+    .details .one {
+        padding: 0;
+    }
+    .mid {
+        height: 50dvh;
+        font-size: 5rem;
+        padding-top: 10px;
+    }
+    .mid h2 {
+        font-size: 26px;
+    }
+    .class {
+        padding: 3rem;
+
+    }
+    .details .two h3{
+        font-size: 1.75rem;
+    }
+    .class .classMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .class .classMenu .team1 {
+        min-width: 350px;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    /* .class .classMenu .team1 .teamDetails .name {
+        flex-direction: column;
+    } */
+    .contact {
+        max-width: 600px ;
+        padding: 20px;
+    }
+    .contact .form, .map, .col-md-8 {
+        width: 350px;
+    }
+    .contact .form h2 {
+        font-size: 1.75rem;
+    }
+    .contact .map {
+        width: 350px;
+    }
+    .contact .map h2 {
+        padding-top: 3rem;
+    }
+    .col-md-8 h2, h3 {
+        padding-top: 2rem;
+    }
+    .footer {
+        padding: 1rem;
+        gap: 5px;
+    }
+    .footer p i {
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width: 496px){
+
+}
+

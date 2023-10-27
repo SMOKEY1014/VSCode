@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>About Us</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head> 			
+	<body>
+		<div class="nav">
+			<h2>XM Fitness Club</h2>
+			<ul id="item">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>	
+				<li><a href="index.html#classes">Classes</a></li>
+				<li><a href="index.html#contact">Contacts</a></li>
+				<!-- <li><a href="groupmembers.html">Members</a></li> -->
+				<div class="icons">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<i class="fa fa-youtube-play" aria-hidden="true"></i>
+				</div>
+			</ul>	
+			<i id="bar" class="fa fa-bars" aria-hidden="true" onclick="toggleMenu()"></i>			
+		</div>
+
+		<div id="about" class="trainer">
+			<div class="about">
+				<h2 data-aos="fade-up" >Hello, we are XM Fitness Club</h2>
+				<p data-aos="fade-up">A personal trainer is an indivisual who has earned
+				certification that demonstrates they have achieved a level a level of 
+				competency for creating and delivering safe and effective 
+				exercise programs for apparently healthy indivisuals and groups.
+				<br>
+				<br>
+				They motivate our clients by collaborating to set goals, providing
+				meaningful feedback and by being a reliable source of 
+				accountability. Thank you
+				</p>
+
+
+
+			</div>
+
+			<div class="people" data-aos="fade-up" > 
+				<div class="team1">
+					<div class="img">
+						<img src="team1.png">
+					</div>
+				<div class="teamDetails">
+					<div class="name">
+						<h4>Elane Parker</h4>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+
+					</div>
+
+					<div class="pro">
+						<p>Areobics Instructor</p>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>
+				</div>
+				</div>
+
+				<div class="team1">
+					<div class="img">
+						<img src="team2.jpg">
+					</div>
+					<div class="teamDetails">
+						<div class="name">
+							<h4>Shaun Smith</h4>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+						<div class="pro">
+							<p>Physique Trainer</p>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="footer">
+			<p>Copyright © 2023 XM Fitness Club Co.<br>Design: SMOKEY </p>
+			<p><a href="" style="text-decoration: none;"><i class="fa fa-envelope-o" aria-hidden="true"></i>support@xmfitness.com</a><br><i class="fa fa-phone" aria-hidden="true"></i>
+			(+27) 76-320-1262</p>
+
+
+		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				offset: 200,
+				duration: 1000,
+			});
+		</script>
+
+
+		<script> src="script.js"</script>
+		<script>
+			function toggleMenu() {
+				var item = document.getElementById("item");
+				if (window.innerWidth <= 990) {
+					// Only toggle the menu for screens with a width less than or equal to 767px
+					if (item.style.display === "none" || item.style.display === "") {
+						item.style.display = "block";
+					} else {
+						item.style.display = "none";
+					}
+				}
+			}
+		</script>
+
+
+	</body>
+</html>
