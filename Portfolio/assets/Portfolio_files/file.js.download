@@ -1,0 +1,24 @@
+let slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides() {
+    const cards = document.getElementsByClassName("card");
+
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > cards.length) {
+        slideIndex = 1;
+    }
+
+    cards[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change slides every 3 seconds (3000 milliseconds)
+}
