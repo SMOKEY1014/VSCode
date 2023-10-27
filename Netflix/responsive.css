@@ -1,0 +1,144 @@
+@media (max-width: 768px) and (min-width: 350px) {
+    body {
+        font-size: 16px;
+    }
+    .get-started-form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .get-started-form button {
+        width: 375px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 1rem 0;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        text-align: center;
+    }
+    .info-container:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .tv-container img {
+        height : 33.7dvh;
+        z-index: 3;
+    }
+    .tv-container video {
+        height : 19.5dvh;
+    }
+    .kids img {
+        height: 28dvh;
+    }
+    .download-card {
+        z-index: 5;
+        height: 11dvh;
+        width: 75dvw;
+    }
+    .download-card .stranger {
+        height : 10dvh;
+        width: 50dvw;
+    }
+    .download-card .stranger img {
+        height: 11dvh;
+    }
+    .download-card img {
+        height: 10dvh;
+    }
+    #info2 {
+        padding-left: 10px;
+        text-align: left;
+        width: 410px;
+    }
+    #in {
+        padding: 70px 0 70px 0;
+    }
+    .footer-items {
+        margin: 0;
+        padding: 70px 30px;
+    }
+    .footer-links li {
+        font-size: 16px;
+        line-height: 1;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        
+    }
+    .banner-container {
+        padding: 30px 10px;
+    }
+    
+}
+
+/* @media (min-width: 550px) and (max-width: 949px) {
+    .info-container:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        text-align: center;
+    }
+}
+
+
+@media (orientation: portrait), (min-width: 400px) and (max-width: 549px) {
+    .get-started-form input {
+        width: 300px;
+    }
+    .get-started-form button {
+        font-size: 1rem;
+    }
+    .info-container:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width: 350px) and (max-width: 399px) {
+    .get-started-form input {
+        width: 235px;
+    }
+    .get-started-form button {
+        font-size: 0.9rem;
+    }
+    .info-container:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /* .info-container {
+        display: flex;
+        flex-direction: column;
+    } 
+    .info {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 349px) {
+    
+} */
